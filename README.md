@@ -1,0 +1,1 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/d6kbbkoame6ldx00?svg=true)](https://ci.appveyor.com/project/volik97/react-props-listing)
