@@ -1,6 +1,7 @@
 
 import { IItemDetails } from "../models/cardModel";
 import "../App.css";
+
 export default function ItemDetails({
   title,
   price,
@@ -12,8 +13,8 @@ export default function ItemDetails({
       ? currency_code === "USD"
         ? "$"
         : "€"
-      : currency_code;
-  const slicedTitle = title.length > 50 ? title.slice(0, 50) : title;
+      : currency_code + ' ';
+  const slicedTitle = title?.length > 50 ? title.slice(0, 49) + '...': title;
   const levelQuantity =
     quantity <= 10
       ? "level-low"
@@ -28,7 +29,7 @@ export default function ItemDetails({
         {symbolCurrencyCode}
         {price}
       </p>
-      <p className={`item-quantity ${levelQuantity}`}>{quantity}</p>
+      <p className={`item-quantity ${levelQuantity}`}>{quantity} left</p>
     </div>
   );
 }
