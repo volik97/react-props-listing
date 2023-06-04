@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 
 import data from "../data/etsy.json";
 import ItemImage from "./ItemImage";
